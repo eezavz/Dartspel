@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C03484117E8CD7300D7D6BB /* DartbordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03484017E8CD7300D7D6BB /* DartbordViewController.m */; };
+		0C03484317E8CE9200D7D6BB /* DartbordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484217E8CE9200D7D6BB /* DartbordView.xib */; };
+		0C03484617E8D0E900D7D6BB /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03484517E8D0E900D7D6BB /* SwitchViewController.m */; };
+		0C03484817E8D25C00D7D6BB /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484717E8D25C00D7D6BB /* SwitchView.xib */; };
+		0C03484A17E8D7CB00D7D6BB /* dartbord.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484917E8D7CB00D7D6BB /* dartbord.png */; };
+		0C03484C17E8E17400D7D6BB /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484B17E8E17400D7D6BB /* crosshair.png */; };
+		0C03484F17E8F24600D7D6BB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03484E17E8F24600D7D6BB /* SettingsViewController.m */; };
+		0C03485117E8F52400D7D6BB /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03485017E8F52400D7D6BB /* SettingsView.xib */; };
 		DC9F5A8117E87BEA002AD1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8017E87BEA002AD1ED /* UIKit.framework */; };
 		DC9F5A8317E87BEA002AD1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8217E87BEA002AD1ED /* Foundation.framework */; };
 		DC9F5A8517E87BEA002AD1ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8417E87BEA002AD1ED /* CoreGraphics.framework */; };
@@ -16,11 +24,20 @@
 		DC9F5A9317E87BEA002AD1ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9217E87BEA002AD1ED /* Default.png */; };
 		DC9F5A9517E87BEA002AD1ED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9417E87BEA002AD1ED /* Default@2x.png */; };
 		DC9F5A9717E87BEA002AD1ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9617E87BEA002AD1ED /* Default-568h@2x.png */; };
-		DC9F5A9A17E87BEA002AD1ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5A9917E87BEA002AD1ED /* ViewController.m */; };
-		DC9F5A9D17E87BEA002AD1ED /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C03483F17E8CD7300D7D6BB /* DartbordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DartbordViewController.h; sourceTree = "<group>"; };
+		0C03484017E8CD7300D7D6BB /* DartbordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DartbordViewController.m; sourceTree = "<group>"; };
+		0C03484217E8CE9200D7D6BB /* DartbordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DartbordView.xib; sourceTree = "<group>"; };
+		0C03484417E8D0E900D7D6BB /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		0C03484517E8D0E900D7D6BB /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		0C03484717E8D25C00D7D6BB /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
+		0C03484917E8D7CB00D7D6BB /* dartbord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dartbord.png; path = ../../../../dartbord.png; sourceTree = "<group>"; };
+		0C03484B17E8E17400D7D6BB /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crosshair.png; path = ../../../../../Downloads/crosshair.png; sourceTree = "<group>"; };
+		0C03484D17E8F24500D7D6BB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0C03484E17E8F24600D7D6BB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0C03485017E8F52400D7D6BB /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		DC9F5A7D17E87BEA002AD1ED /* Dartspel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dartspel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9F5A8017E87BEA002AD1ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC9F5A8217E87BEA002AD1ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +51,6 @@
 		DC9F5A9217E87BEA002AD1ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DC9F5A9417E87BEA002AD1ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DC9F5A9617E87BEA002AD1ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DC9F5A9817E87BEA002AD1ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC9F5A9917E87BEA002AD1ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DC9F5A9C17E87BEA002AD1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +97,20 @@
 		DC9F5A8617E87BEA002AD1ED /* Dartspel */ = {
 			isa = PBXGroup;
 			children = (
+				0C03484B17E8E17400D7D6BB /* crosshair.png */,
+				0C03484917E8D7CB00D7D6BB /* dartbord.png */,
 				DC9F5A8F17E87BEA002AD1ED /* AppDelegate.h */,
 				DC9F5A9017E87BEA002AD1ED /* AppDelegate.m */,
-				DC9F5A9817E87BEA002AD1ED /* ViewController.h */,
-				DC9F5A9917E87BEA002AD1ED /* ViewController.m */,
-				DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */,
 				DC9F5A8717E87BEA002AD1ED /* Supporting Files */,
+				0C03483F17E8CD7300D7D6BB /* DartbordViewController.h */,
+				0C03484017E8CD7300D7D6BB /* DartbordViewController.m */,
+				0C03484217E8CE9200D7D6BB /* DartbordView.xib */,
+				0C03484417E8D0E900D7D6BB /* SwitchViewController.h */,
+				0C03484517E8D0E900D7D6BB /* SwitchViewController.m */,
+				0C03484717E8D25C00D7D6BB /* SwitchView.xib */,
+				0C03484D17E8F24500D7D6BB /* SettingsViewController.h */,
+				0C03484E17E8F24600D7D6BB /* SettingsViewController.m */,
+				0C03485017E8F52400D7D6BB /* SettingsView.xib */,
 			);
 			path = Dartspel;
 			sourceTree = "<group>";
@@ -162,7 +184,11 @@
 				DC9F5A9317E87BEA002AD1ED /* Default.png in Resources */,
 				DC9F5A9517E87BEA002AD1ED /* Default@2x.png in Resources */,
 				DC9F5A9717E87BEA002AD1ED /* Default-568h@2x.png in Resources */,
-				DC9F5A9D17E87BEA002AD1ED /* ViewController.xib in Resources */,
+				0C03484317E8CE9200D7D6BB /* DartbordView.xib in Resources */,
+				0C03484817E8D25C00D7D6BB /* SwitchView.xib in Resources */,
+				0C03484A17E8D7CB00D7D6BB /* dartbord.png in Resources */,
+				0C03484C17E8E17400D7D6BB /* crosshair.png in Resources */,
+				0C03485117E8F52400D7D6BB /* SettingsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +201,9 @@
 			files = (
 				DC9F5A8D17E87BEA002AD1ED /* main.m in Sources */,
 				DC9F5A9117E87BEA002AD1ED /* AppDelegate.m in Sources */,
-				DC9F5A9A17E87BEA002AD1ED /* ViewController.m in Sources */,
+				0C03484117E8CD7300D7D6BB /* DartbordViewController.m in Sources */,
+				0C03484617E8D0E900D7D6BB /* SwitchViewController.m in Sources */,
+				0C03484F17E8F24600D7D6BB /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +216,6 @@
 				DC9F5A8A17E87BEA002AD1ED /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC9F5A9C17E87BEA002AD1ED /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -296,6 +316,7 @@
 				DC9F5AA217E87BEA002AD1ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

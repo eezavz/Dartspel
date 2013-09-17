@@ -8,14 +8,14 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "SwitchViewController.h"
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    //[_viewController release];
     [super dealloc];
 }
 
@@ -23,8 +23,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    self.switchViewController = [[SwitchViewController alloc] initWithNibName:@"SwitchView" bundle:nil];
+    UIView *switchView = self.switchViewController.view;
+    CGRect switchViewFrame = switchView.frame;
+    switchViewFrame.origin.y += [UIApplication sharedApplication].statusBarFrame.size.height;
+    switchView.frame = switchViewFrame;
+    self.window.rootViewController = self.switchViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
