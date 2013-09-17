@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC9F5A8117E87BEA002AD1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8017E87BEA002AD1ED /* UIKit.framework */; };
+		DC9F5A8317E87BEA002AD1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8217E87BEA002AD1ED /* Foundation.framework */; };
+		DC9F5A8517E87BEA002AD1ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8417E87BEA002AD1ED /* CoreGraphics.framework */; };
+		DC9F5A8B17E87BEA002AD1ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A8917E87BEA002AD1ED /* InfoPlist.strings */; };
+		DC9F5A8D17E87BEA002AD1ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5A8C17E87BEA002AD1ED /* main.m */; };
+		DC9F5A9117E87BEA002AD1ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5A9017E87BEA002AD1ED /* AppDelegate.m */; };
+		DC9F5A9317E87BEA002AD1ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9217E87BEA002AD1ED /* Default.png */; };
+		DC9F5A9517E87BEA002AD1ED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9417E87BEA002AD1ED /* Default@2x.png */; };
+		DC9F5A9717E87BEA002AD1ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9617E87BEA002AD1ED /* Default-568h@2x.png */; };
+		DC9F5A9A17E87BEA002AD1ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9F5A9917E87BEA002AD1ED /* ViewController.m */; };
+		DC9F5A9D17E87BEA002AD1ED /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC9F5A7D17E87BEA002AD1ED /* Dartspel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dartspel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9F5A8017E87BEA002AD1ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC9F5A8217E87BEA002AD1ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC9F5A8417E87BEA002AD1ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC9F5A8817E87BEA002AD1ED /* Dartspel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dartspel-Info.plist"; sourceTree = "<group>"; };
+		DC9F5A8A17E87BEA002AD1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC9F5A8C17E87BEA002AD1ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC9F5A8E17E87BEA002AD1ED /* Dartspel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dartspel-Prefix.pch"; sourceTree = "<group>"; };
+		DC9F5A8F17E87BEA002AD1ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC9F5A9017E87BEA002AD1ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC9F5A9217E87BEA002AD1ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DC9F5A9417E87BEA002AD1ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DC9F5A9617E87BEA002AD1ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DC9F5A9817E87BEA002AD1ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC9F5A9917E87BEA002AD1ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC9F5A9C17E87BEA002AD1ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9F5A7A17E87BEA002AD1ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9F5A8117E87BEA002AD1ED /* UIKit.framework in Frameworks */,
+				DC9F5A8317E87BEA002AD1ED /* Foundation.framework in Frameworks */,
+				DC9F5A8517E87BEA002AD1ED /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9F5A7417E87BEA002AD1ED = {
+			isa = PBXGroup;
+			children = (
+				DC9F5A8617E87BEA002AD1ED /* Dartspel */,
+				DC9F5A7F17E87BEA002AD1ED /* Frameworks */,
+				DC9F5A7E17E87BEA002AD1ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9F5A7E17E87BEA002AD1ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F5A7D17E87BEA002AD1ED /* Dartspel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9F5A7F17E87BEA002AD1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F5A8017E87BEA002AD1ED /* UIKit.framework */,
+				DC9F5A8217E87BEA002AD1ED /* Foundation.framework */,
+				DC9F5A8417E87BEA002AD1ED /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC9F5A8617E87BEA002AD1ED /* Dartspel */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F5A8F17E87BEA002AD1ED /* AppDelegate.h */,
+				DC9F5A9017E87BEA002AD1ED /* AppDelegate.m */,
+				DC9F5A9817E87BEA002AD1ED /* ViewController.h */,
+				DC9F5A9917E87BEA002AD1ED /* ViewController.m */,
+				DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */,
+				DC9F5A8717E87BEA002AD1ED /* Supporting Files */,
+			);
+			path = Dartspel;
+			sourceTree = "<group>";
+		};
+		DC9F5A8717E87BEA002AD1ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F5A8817E87BEA002AD1ED /* Dartspel-Info.plist */,
+				DC9F5A8917E87BEA002AD1ED /* InfoPlist.strings */,
+				DC9F5A8C17E87BEA002AD1ED /* main.m */,
+				DC9F5A8E17E87BEA002AD1ED /* Dartspel-Prefix.pch */,
+				DC9F5A9217E87BEA002AD1ED /* Default.png */,
+				DC9F5A9417E87BEA002AD1ED /* Default@2x.png */,
+				DC9F5A9617E87BEA002AD1ED /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9F5A7C17E87BEA002AD1ED /* Dartspel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9F5AA017E87BEA002AD1ED /* Build configuration list for PBXNativeTarget "Dartspel" */;
+			buildPhases = (
+				DC9F5A7917E87BEA002AD1ED /* Sources */,
+				DC9F5A7A17E87BEA002AD1ED /* Frameworks */,
+				DC9F5A7B17E87BEA002AD1ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dartspel;
+			productName = Dartspel;
+			productReference = DC9F5A7D17E87BEA002AD1ED /* Dartspel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC9F5A7517E87BEA002AD1ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Groep 1";
+			};
+			buildConfigurationList = DC9F5A7817E87BEA002AD1ED /* Build configuration list for PBXProject "Dartspel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC9F5A7417E87BEA002AD1ED;
+			productRefGroup = DC9F5A7E17E87BEA002AD1ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9F5A7C17E87BEA002AD1ED /* Dartspel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9F5A7B17E87BEA002AD1ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9F5A8B17E87BEA002AD1ED /* InfoPlist.strings in Resources */,
+				DC9F5A9317E87BEA002AD1ED /* Default.png in Resources */,
+				DC9F5A9517E87BEA002AD1ED /* Default@2x.png in Resources */,
+				DC9F5A9717E87BEA002AD1ED /* Default-568h@2x.png in Resources */,
+				DC9F5A9D17E87BEA002AD1ED /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9F5A7917E87BEA002AD1ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9F5A8D17E87BEA002AD1ED /* main.m in Sources */,
+				DC9F5A9117E87BEA002AD1ED /* AppDelegate.m in Sources */,
+				DC9F5A9A17E87BEA002AD1ED /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC9F5A8917E87BEA002AD1ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9F5A8A17E87BEA002AD1ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC9F5A9B17E87BEA002AD1ED /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9F5A9C17E87BEA002AD1ED /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC9F5A9E17E87BEA002AD1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC9F5A9F17E87BEA002AD1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC9F5AA117E87BEA002AD1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dartspel/Dartspel-Prefix.pch";
+				INFOPLIST_FILE = "Dartspel/Dartspel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC9F5AA217E87BEA002AD1ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dartspel/Dartspel-Prefix.pch";
+				INFOPLIST_FILE = "Dartspel/Dartspel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9F5A7817E87BEA002AD1ED /* Build configuration list for PBXProject "Dartspel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9F5A9E17E87BEA002AD1ED /* Debug */,
+				DC9F5A9F17E87BEA002AD1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9F5AA017E87BEA002AD1ED /* Build configuration list for PBXNativeTarget "Dartspel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9F5AA117E87BEA002AD1ED /* Debug */,
+				DC9F5AA217E87BEA002AD1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC9F5A7517E87BEA002AD1ED /* Project object */;
+}
