@@ -11,10 +11,10 @@
 		0C03484317E8CE9200D7D6BB /* DartbordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484217E8CE9200D7D6BB /* DartbordView.xib */; };
 		0C03484617E8D0E900D7D6BB /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03484517E8D0E900D7D6BB /* SwitchViewController.m */; };
 		0C03484817E8D25C00D7D6BB /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484717E8D25C00D7D6BB /* SwitchView.xib */; };
-		0C03484A17E8D7CB00D7D6BB /* dartbord.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484917E8D7CB00D7D6BB /* dartbord.png */; };
-		0C03484C17E8E17400D7D6BB /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C03484B17E8E17400D7D6BB /* crosshair.png */; };
 		0C03484F17E8F24600D7D6BB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03484E17E8F24600D7D6BB /* SettingsViewController.m */; };
 		0C03485117E8F52400D7D6BB /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C03485017E8F52400D7D6BB /* SettingsView.xib */; };
+		0CE9F4B017E9C86E0080681C /* dartbord.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9F4AF17E9C86E0080681C /* dartbord.png */; };
+		0CE9F4B217E9C8E90080681C /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9F4B117E9C8E90080681C /* crosshair.png */; };
 		DC9F5A8117E87BEA002AD1ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8017E87BEA002AD1ED /* UIKit.framework */; };
 		DC9F5A8317E87BEA002AD1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8217E87BEA002AD1ED /* Foundation.framework */; };
 		DC9F5A8517E87BEA002AD1ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F5A8417E87BEA002AD1ED /* CoreGraphics.framework */; };
@@ -33,11 +33,11 @@
 		0C03484417E8D0E900D7D6BB /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		0C03484517E8D0E900D7D6BB /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 		0C03484717E8D25C00D7D6BB /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
-		0C03484917E8D7CB00D7D6BB /* dartbord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dartbord.png; path = ../../../../dartbord.png; sourceTree = "<group>"; };
-		0C03484B17E8E17400D7D6BB /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crosshair.png; path = ../../../../../Downloads/crosshair.png; sourceTree = "<group>"; };
 		0C03484D17E8F24500D7D6BB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0C03484E17E8F24600D7D6BB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		0C03485017E8F52400D7D6BB /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		0CE9F4AF17E9C86E0080681C /* dartbord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dartbord.png; sourceTree = "<group>"; };
+		0CE9F4B117E9C8E90080681C /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 		DC9F5A7D17E87BEA002AD1ED /* Dartspel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dartspel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9F5A8017E87BEA002AD1ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC9F5A8217E87BEA002AD1ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,8 +97,8 @@
 		DC9F5A8617E87BEA002AD1ED /* Dartspel */ = {
 			isa = PBXGroup;
 			children = (
-				0C03484B17E8E17400D7D6BB /* crosshair.png */,
-				0C03484917E8D7CB00D7D6BB /* dartbord.png */,
+				0CE9F4B117E9C8E90080681C /* crosshair.png */,
+				0CE9F4AF17E9C86E0080681C /* dartbord.png */,
 				DC9F5A8F17E87BEA002AD1ED /* AppDelegate.h */,
 				DC9F5A9017E87BEA002AD1ED /* AppDelegate.m */,
 				DC9F5A8717E87BEA002AD1ED /* Supporting Files */,
@@ -186,9 +186,9 @@
 				DC9F5A9717E87BEA002AD1ED /* Default-568h@2x.png in Resources */,
 				0C03484317E8CE9200D7D6BB /* DartbordView.xib in Resources */,
 				0C03484817E8D25C00D7D6BB /* SwitchView.xib in Resources */,
-				0C03484A17E8D7CB00D7D6BB /* dartbord.png in Resources */,
-				0C03484C17E8E17400D7D6BB /* crosshair.png in Resources */,
 				0C03485117E8F52400D7D6BB /* SettingsView.xib in Resources */,
+				0CE9F4B017E9C86E0080681C /* dartbord.png in Resources */,
+				0CE9F4B217E9C8E90080681C /* crosshair.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
