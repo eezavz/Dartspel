@@ -34,12 +34,13 @@
         [UIView animateWithDuration:0.5 animations:^{
             self.settingsViewController.view.frame = self.dartbordViewController.view.frame;// its final location
             self.dartbordViewController.view.frame = offscreenLeft;// its final location
+            sender.title = @"Dartbord";
+
         }
                          completion:^(BOOL finished){
                              if(finished) {
                                  [self.dartbordViewController.view removeFromSuperview];
-                                 sender.title = @"Dartbord";
-                             }}];
+                                                              }}];
         
     } else if (self.dartbordViewController.view.superview == nil) {
         if (self.dartbordViewController == nil) {
@@ -57,11 +58,12 @@
         [UIView animateWithDuration:0.5 animations:^{
             self.dartbordViewController.view.frame = onscreen;// its final location
             self.settingsViewController.view.frame = offscreenRight;// its final location
+            sender.title = @"Instellingen";
         }
                          completion:^(BOOL finished){
                              if(finished) {
                                  [self.settingsViewController.view removeFromSuperview];
-                                 sender.title = @"Settings";
+                                 
                              }}];
     }
 }
