@@ -35,12 +35,12 @@
             self.settingsViewController.view.frame = self.dartbordViewController.view.frame;// its final location
             self.dartbordViewController.view.frame = offscreenLeft;// its final location
             sender.title = @"Dartbord";
-
+            
         }
                          completion:^(BOOL finished){
                              if(finished) {
                                  [self.dartbordViewController.view removeFromSuperview];
-                                                              }}];
+                             }}];
         
     } else if (self.dartbordViewController.view.superview == nil) {
         if (self.dartbordViewController == nil) {
