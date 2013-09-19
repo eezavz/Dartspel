@@ -7,19 +7,24 @@
 //
 
 #import "DartbordViewController.h"
+#define degreesToRadians(x) (M_PI * (x) / 180.0)
 
 @interface DartbordViewController ()
 
 @end
 
 @implementation DartbordViewController
+@synthesize hor;
+@synthesize vert;
 @synthesize dartbord;
 @synthesize crosshair;
 @synthesize xSlider;
 @synthesize ySlider;
 
+
+
 - (IBAction)gooi:(id)sender {
-    
+    NSLog(@"test");
 }
 
 - (IBAction)richt:(id)sender {

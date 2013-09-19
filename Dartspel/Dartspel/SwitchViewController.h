@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DartbordViewController.h"
 #import "SettingsViewController.h"
+#define degreesToRadians(x) (M_PI * (x) / 180.0)
 
 @interface SwitchViewController : UIViewController
 

@@ -16,6 +16,26 @@
 
 @implementation SwitchViewController
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    if(toInterfaceOrientation == UIInterfaceOrientationPortrait)
+    {
+        self.dartbordViewController.view = self.dartbordViewController.vert;
+        self.dartbordViewController.view.transform = CGAffineTransformIdentity;
+        //self.dartbordViewController.view.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
+        self.dartbordViewController.view.bounds = CGRectMake(0.0, 0.0, 320.0, 460.0);
+        NSLog(@"naar vert");
+    }
+    else if(toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+        self.dartbordViewController.view = self.dartbordViewController.hor;
+        self.dartbordViewController.view.transform = CGAffineTransformIdentity;
+        //self.dartbordViewController.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
+        self.dartbordViewController.view.bounds = CGRectMake(0.0, 0.0, 480.0, 300.0);
+        NSLog(@"naar hor");
+    }
+}
+
 - (IBAction) switchViews:(UIBarButtonItem *)sender
 {
     if (self.settingsViewController.view.superview == nil) {
