@@ -17,9 +17,13 @@
 @synthesize hor;
 @synthesize vert;
 @synthesize dartbord;
+@synthesize dartbord2;
 @synthesize crosshair;
+@synthesize crosshair2;
 @synthesize xSlider;
 @synthesize ySlider;
+@synthesize xSlider2;
+@synthesize ySlider2;
 
 
 
@@ -27,11 +31,24 @@
     NSLog(@"test");
 }
 
+- (IBAction)gooi2:(id)sender
+{
+    
+}
+
 - (IBAction)richt:(id)sender {
     CGRect frame = crosshair.frame;
     frame.origin.x = dartbord.frame.origin.x + xSlider.value - frame.size.width / 2;
     frame.origin.y = dartbord.frame.origin.y + ySlider.value - frame.size.height / 2;
     crosshair.frame = frame;
+}
+
+- (IBAction)richt2:(id)sender
+{
+    CGRect frame = crosshair2.frame;
+    frame.origin.x = dartbord2.frame.origin.x + xSlider2.value - frame.size.width / 2;
+    frame.origin.y = dartbord2.frame.origin.y + ySlider2.value - frame.size.height / 2;
+    crosshair2.frame = frame;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -53,6 +70,7 @@
 	// Do any additional setup after loading the view.
     CGAffineTransform trans = CGAffineTransformMakeRotation(M_PI * 0.5);
     ySlider.transform = trans;
+    ySlider2.transform = trans;
 }
 
 - (void)didReceiveMemoryWarning

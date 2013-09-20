@@ -16,11 +16,17 @@
 @property (strong, retain) IBOutlet UIView * hor;
 @property (strong, retain) IBOutlet UIView * vert;
 @property (strong, nonatomic) IBOutlet UIImageView *dartbord;
+@property (strong, retain) IBOutlet UIImageView * dartbord2;
 @property (strong, nonatomic) IBOutlet UIImageView *crosshair;
+@property (strong, retain) IBOutlet UIImageView * crosshair2;
 @property (strong, nonatomic) IBOutlet UISlider *ySlider;
 @property (strong, nonatomic) IBOutlet UISlider *xSlider;
+@property (strong, retain) IBOutlet UISlider * ySlider2;
+@property (strong, retain) IBOutlet UISlider * xSlider2;
 - (IBAction)gooi:(id)sender;
+- (IBAction)gooi2:(id)sender;
 - (IBAction)richt:(id)sender;
+- (IBAction)richt2:(id)sender;
 
 
 @end
