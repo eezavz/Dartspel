@@ -26,7 +26,7 @@
 @property (strong, retain) IBOutlet UISlider * xSlider2;
 - (IBAction)gooi:(id)sender;
 - (IBAction)richt:(id)sender;
-- (void)turnScreen:(int)number;
+- (void)turnScreen:(BOOL)portrait;
 
 
 @end

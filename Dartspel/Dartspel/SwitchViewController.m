@@ -16,19 +16,19 @@
 
 @implementation SwitchViewController
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     //NSLog(@"%d", toInterfaceOrientation);
     if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
-        NSLog(@"port");
-        [self.dartbordViewController turnScreen:1];
+        [self.dartbordViewController turnScreen:YES];
     }
     else 
     {
-        NSLog(@"land");
-        [self.dartbordViewController turnScreen:2];
+        [self.dartbordViewController turnScreen:NO];
     }
+//    NSLog(@"%@", NSStringFromCGRect(self.dartbordViewController.view.bounds));
+//    [[self.view.subviews objectAtIndex:0] bounds];
 }
 
 - (IBAction) switchViews:(UIBarButtonItem *)sender
@@ -81,6 +81,10 @@
                                  
                              }}];
     }
+}
+
+- (NSUInteger) supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

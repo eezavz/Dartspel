@@ -26,35 +26,22 @@
 @synthesize ySlider2;
 
 
-- (void)turnScreen:(int)number
+- (void)turnScreen:(BOOL)portrait
 {
-    if(number == 1)
+    NSLog(@"Current: %@", NSStringFromCGRect(self.view.bounds));
+    NSLog(@"Vertical: %@", NSStringFromCGRect(self.vert.bounds));
+    NSLog(@"Horizontal: %@", NSStringFromCGRect(self.hor.bounds));
+    if(portrait)
     {
-        NSLog(@"1");
+        NSLog(@"Verticaal");
+        CGRect temp = vert.bounds;
         self.view = self.vert;
-        self.vert.bounds = CGRectMake(0.0, 0.0, 320.0, 416.0);
-        CGRect onscreen = self.vert.frame;
-        onscreen.origin.x = 0;
-        onscreen.origin.y = 0;
-        self.view.frame = onscreen;
-        
-        //CGRect onscreen = self.vert.frame;
-        //onscreen.origin.x = 0;
-        //self.vert.frame = onscreen;
-        
-        //CGRect offscreenRight = self.hor.frame;
-        //offscreenRight.origin.x = offscreenRight.size.width;
-        //self.hor.frame = offscreenRight;
-    }else{
-        NSLog(@"2");
+        self.view.bounds = temp;
+    } else {
+        NSLog(@"Horizontaal");
+        CGRect temp = hor.bounds;
         self.view = self.hor;
-        //CGRect onscreen = self.hor.frame;
-        //onscreen.origin.x = 0;
-        //self.hor.frame = onscreen;
-        
-        //CGRect offscreenRight = self.vert.frame;
-        //offscreenRight.origin.x = offscreenRight.size.width;
-        //self.vert.frame = offscreenRight;
+        self.view.bounds = temp;
     }
 }
 
@@ -97,6 +84,8 @@
     CGAffineTransform trans = CGAffineTransformMakeRotation(M_PI * 0.5);
     ySlider.transform = trans;
     ySlider2.transform = trans;
+    //NSLog(@"%@", NSStringFromCGRect(hor.bounds));
+    
 }
 
 - (void)didReceiveMemoryWarning
