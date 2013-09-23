@@ -41,7 +41,7 @@
         //CGRect onscreen = self.vert.frame;
         //onscreen.origin.x = 0;
         //self.vert.frame = onscreen;
-    
+        
         //CGRect offscreenRight = self.hor.frame;
         //offscreenRight.origin.x = offscreenRight.size.width;
         //self.hor.frame = offscreenRight;
@@ -63,18 +63,18 @@
 }
 
 - (IBAction)richt:(id)sender {
-    CGRect frame = crosshair.frame;
-    frame.origin.x = dartbord.frame.origin.x + xSlider.value - frame.size.width / 2;
-    frame.origin.y = dartbord.frame.origin.y + ySlider.value - frame.size.height / 2;
-    crosshair.frame = frame;
-}
-
-- (IBAction)richt2:(id)sender
-{
-    CGRect frame = crosshair2.frame;
-    frame.origin.x = dartbord2.frame.origin.x + xSlider2.value - frame.size.width / 2;
-    frame.origin.y = dartbord2.frame.origin.y + ySlider2.value - frame.size.height / 2;
-    crosshair2.frame = frame;
+    if(self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        CGRect frame = crosshair.frame;
+        frame.origin.x = dartbord.frame.origin.x + xSlider.value - frame.size.width / 2;
+        frame.origin.y = dartbord.frame.origin.y + ySlider.value - frame.size.height / 2;
+        crosshair.frame = frame;
+    } else {
+        CGRect frame = crosshair2.frame;
+        frame.origin.x = dartbord2.frame.origin.x + xSlider2.value - frame.size.width / 2;
+        frame.origin.y = dartbord2.frame.origin.y + ySlider2.value - frame.size.height / 2;
+        crosshair2.frame = frame;
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
