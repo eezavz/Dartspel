@@ -18,38 +18,16 @@
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    NSLog(@"%d", toInterfaceOrientation);
+    //NSLog(@"%d", toInterfaceOrientation);
     if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
-        NSLog(@"Yolo");
-        [self.view addSubview:self.dartbordViewController.vert];
-        CGRect onscreen = self.dartbordViewController.vert.frame;
-        onscreen.origin.x = 0;
-        self.dartbordViewController.vert.frame = onscreen;
-        
-        CGRect offscreenRight = self.dartbordViewController.hor.frame;
-        offscreenRight.origin.x = offscreenRight.size.width;
-        self.dartbordViewController.hor.frame = offscreenRight;
-        //self.dartbordViewController.view = self.dartbordViewController.vert;
-        //self.dartbordViewController.view.transform = CGAffineTransformIdentity;
-        //self.dartbordViewController.view.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
-        //self.dartbordViewController.view.bounds = CGRectMake(0.0, 0.0, 320.0, 460.0);
+        NSLog(@"port");
+        [self.dartbordViewController turnScreen:1];
     }
     else 
     {
-        NSLog(@"Yolo2");
-        [self.view addSubview:self.dartbordViewController.hor];
-        CGRect onscreen = self.dartbordViewController.hor.frame;
-        onscreen.origin.x = 0;
-        self.dartbordViewController.hor.frame = onscreen;
-        
-        CGRect offscreenRight = self.dartbordViewController.vert.frame;
-        offscreenRight.origin.x = offscreenRight.size.width;
-        self.dartbordViewController.vert.frame = offscreenRight;
-        //self.dartbordViewController.view = self.dartbordViewController.hor;
-        //self.dartbordViewController.view.transform = CGAffineTransformIdentity;
-        //self.dartbordViewController.view.transform = CGAffineTransformMakeRotation(degreesToRadians(90));
-        //self.dartbordViewController.view.bounds = CGRectMake(0.0, 0.0, 480.0, 300.0);
+        NSLog(@"land");
+        [self.dartbordViewController turnScreen:2];
     }
 }
 

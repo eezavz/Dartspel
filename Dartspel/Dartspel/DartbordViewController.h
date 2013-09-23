@@ -12,6 +12,7 @@
 {
     UIView * hor;
     UIView * vert;
+    
 }
 @property (strong, retain) IBOutlet UIView * hor;
 @property (strong, retain) IBOutlet UIView * vert;
@@ -26,6 +27,7 @@
 - (IBAction)gooi:(id)sender;
 - (IBAction)richt:(id)sender;
 - (IBAction)richt2:(id)sender;
+- (void)turnScreen:(int)number;
 
 
 @end
