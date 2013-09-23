@@ -31,11 +31,6 @@
     NSLog(@"test");
 }
 
-- (IBAction)gooi2:(id)sender
-{
-    
-}
-
 - (IBAction)richt:(id)sender {
     CGRect frame = crosshair.frame;
     frame.origin.x = dartbord.frame.origin.x + xSlider.value - frame.size.width / 2;

@@ -24,7 +24,6 @@
 @property (strong, retain) IBOutlet UISlider * ySlider2;
 @property (strong, retain) IBOutlet UISlider * xSlider2;
 - (IBAction)gooi:(id)sender;
-- (IBAction)gooi2:(id)sender;
 - (IBAction)richt:(id)sender;
 - (IBAction)richt2:(id)sender;
 

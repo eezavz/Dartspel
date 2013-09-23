@@ -18,8 +18,10 @@
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    if(toInterfaceOrientation == UIInterfaceOrientationPortrait)
+    NSLog(@"%d", toInterfaceOrientation);
+    if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
+        NSLog(@"Yolo");
         [self.view addSubview:self.dartbordViewController.vert];
         CGRect onscreen = self.dartbordViewController.vert.frame;
         onscreen.origin.x = 0;
@@ -33,8 +35,9 @@
         //self.dartbordViewController.view.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
         //self.dartbordViewController.view.bounds = CGRectMake(0.0, 0.0, 320.0, 460.0);
     }
-    else if(toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    else 
     {
+        NSLog(@"Yolo2");
         [self.view addSubview:self.dartbordViewController.hor];
         CGRect onscreen = self.dartbordViewController.hor.frame;
         onscreen.origin.x = 0;
