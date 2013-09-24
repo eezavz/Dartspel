@@ -36,12 +36,12 @@
         NSLog(@"Verticaal");
         CGRect temp = vert.bounds;
         self.view = self.vert;
-        self.view.bounds = temp;
+        self.view.frame = temp;
     } else {
         NSLog(@"Horizontaal");
         CGRect temp = hor.bounds;
         self.view = self.hor;
-        self.view.bounds = temp;
+        self.view.frame = temp;
     }
 }
 
