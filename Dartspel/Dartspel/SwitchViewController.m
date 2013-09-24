@@ -77,6 +77,8 @@
         }
                          completion:^(BOOL finished){
                              if(finished) {
+                                 self.dartbordViewController.moeilijkheidsgraad = [self.settingsViewController getMoeilijkheidsgraad];
+                                 NSLog(@"%i", self.dartbordViewController.moeilijkheidsgraad );
                                  [self.settingsViewController.view removeFromSuperview];
                                  
                              }}];

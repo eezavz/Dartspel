@@ -24,6 +24,7 @@
 @synthesize ySlider;
 @synthesize xSlider2;
 @synthesize ySlider2;
+@synthesize moeilijkheidsgraad;
 
 
 - (void)turnScreen:(BOOL)portrait

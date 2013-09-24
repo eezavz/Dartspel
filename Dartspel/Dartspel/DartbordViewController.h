@@ -12,6 +12,7 @@
 {
     UIView * hor;
     UIView * vert;
+    int moeilijkheidsgraad;
     
 }
 @property (strong, retain) IBOutlet UIView * hor;
@@ -24,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UISlider *xSlider;
 @property (strong, retain) IBOutlet UISlider * ySlider2;
 @property (strong, retain) IBOutlet UISlider * xSlider2;
+@property (atomic, assign) int moeilijkheidsgraad;
 - (IBAction)gooi:(id)sender;
 - (IBAction)richt:(id)sender;
 - (void)turnScreen:(BOOL)portrait;

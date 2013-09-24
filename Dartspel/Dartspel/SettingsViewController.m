@@ -13,6 +13,7 @@
 @end
 
 @implementation SettingsViewController
+@synthesize moeilijkheidsgraad;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,6 +22,11 @@
         // Custom initialization
     }
     return self;
+}
+
+- (int)getMoeilijkheidsgraad
+{
+    return [moeilijkheidsgraad selectedSegmentIndex];
 }
 
 - (void)viewDidLoad

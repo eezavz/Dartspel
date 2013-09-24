@@ -10,4 +10,6 @@
 
 @interface SettingsViewController : UIViewController
 
+@property (nonatomic, retain)IBOutlet UISegmentedControl * moeilijkheidsgraad;
+- (int)getMoeilijkheidsgraad;
 @end
