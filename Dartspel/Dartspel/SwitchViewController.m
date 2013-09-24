@@ -9,6 +9,7 @@
 #import "SwitchViewController.h"
 #import "DartbordViewController.h"
 #import "SettingsViewController.h"
+//#define degreesToRadians(x) (M_PI * (x) /180.0)
 
 @interface SwitchViewController ()
 
@@ -18,7 +19,13 @@
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    //NSLog(@"%d", toInterfaceOrientation);
+//    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+//        self.view.transform = CGAffineTransformIdentity;
+//        self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(0));
+//    } else {
+//        self.view.transform = CGAffineTransformIdentity;
+//        self.view.transform = CGAffineTransformMakeRotation(degreesToRadians(-90));
+//    }
     if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         [self.dartbordViewController turnScreen:YES];
@@ -27,8 +34,6 @@
     {
         [self.dartbordViewController turnScreen:NO];
     }
-//    NSLog(@"%@", NSStringFromCGRect(self.dartbordViewController.view.bounds));
-//    [[self.view.subviews objectAtIndex:0] bounds];
 }
 
 - (IBAction) switchViews:(UIBarButtonItem *)sender

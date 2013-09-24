@@ -9,12 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DartbordViewController : UIViewController
-{
-    UIView * hor;
-    UIView * vert;
-    int moeilijkheidsgraad;
-    
-}
+
 @property (strong, retain) IBOutlet UIView * hor;
 @property (strong, retain) IBOutlet UIView * vert;
 @property (strong, nonatomic) IBOutlet UIImageView *dartbord;
