@@ -46,8 +46,29 @@
     }
 }
 
+- (int) distanceFromPoint:(int)p2x: (int)p2y: (int)p1
+{
+    int xDist = (p2x - p1);
+    int yDist = (p2y - p1);
+    return sqrt((xDist * xDist) + (yDist * yDist));
+}
+
 - (IBAction)gooi:(id)sender {
-    NSLog(@"doe iets speciaals");
+    int point;
+    int mg = random() % 20*moeilijkheidsgraad;
+    NSString * pointsText;
+    if(self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        point = 250 - [self distanceFromPoint:xSlider.value: ySlider.value: 125];
+        point = point - mg;
+        pointsText = [NSString stringWithFormat:@"Points: %i", point];
+    }else{
+        point = 250 - [self distanceFromPoint:xSlider2.value: ySlider2.value: 93];
+        point = point - mg;
+        pointsText = [NSString stringWithFormat:@"Points: %i", point];
+    }
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Points" message:pointsText delegate:self cancelButtonTitle:@"Ok!" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (IBAction)richt:(id)sender {

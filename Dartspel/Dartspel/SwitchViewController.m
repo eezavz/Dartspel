@@ -89,7 +89,7 @@
         }
                          completion:^(BOOL finished){
                              if(finished) {
-                                 self.dartbordViewController.moeilijkheidsgraad = [self.settingsViewController getMoeilijkheidsgraad];
+                                 self.dartbordViewController.moeilijkheidsgraad = [self.settingsViewController getMoeilijkheidsgraad]+1;
                                  NSLog(@"%i", self.dartbordViewController.moeilijkheidsgraad );
                                  [self.settingsViewController.view removeFromSuperview];
                                  
@@ -116,6 +116,7 @@
 	// Do any additional setup after loading the view.
     self.dartbordViewController = [[DartbordViewController alloc] initWithNibName:@"DartbordView" bundle:nil];
     [self.view insertSubview:self.dartbordViewController.view atIndex:0];
+    self.dartbordViewController.moeilijkheidsgraad  = [self.settingsViewController getMoeilijkheidsgraad]+1;
 }
 
 - (void)didReceiveMemoryWarning
