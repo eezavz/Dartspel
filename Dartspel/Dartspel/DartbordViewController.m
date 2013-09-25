@@ -29,9 +29,9 @@
 
 - (void)turnScreen:(BOOL)portrait
 {
-    NSLog(@"Current: %@", NSStringFromCGRect(self.view.bounds));
-    NSLog(@"Vertical: %@", NSStringFromCGRect(self.vert.bounds));
-    NSLog(@"Horizontal: %@", NSStringFromCGRect(self.hor.bounds));
+//    NSLog(@"Current: %@", NSStringFromCGRect(self.view.bounds));
+//    NSLog(@"Vertical: %@", NSStringFromCGRect(self.vert.bounds));
+//    NSLog(@"Horizontal: %@", NSStringFromCGRect(self.hor.bounds));
     if(portrait)
     {
         NSLog(@"Verticaal");
@@ -47,7 +47,7 @@
 }
 
 - (IBAction)gooi:(id)sender {
-    NSLog(@"test");
+    NSLog(@"doe iets speciaals");
 }
 
 - (IBAction)richt:(id)sender {

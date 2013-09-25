@@ -29,11 +29,18 @@
     if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
         [self.dartbordViewController turnScreen:YES];
+        self.settingsViewController.view.frame = self.dartbordViewController.view.frame;
     }
     else 
     {
         [self.dartbordViewController turnScreen:NO];
+        self.settingsViewController.view.frame = self.dartbordViewController.view.frame;
     }
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.dartbordViewController richt:nil];
 }
 
 - (IBAction) switchViews:(UIBarButtonItem *)sender
