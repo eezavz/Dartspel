@@ -24,7 +24,7 @@
 - (IBAction)gooi:(id)sender;
 - (IBAction)richt:(id)sender;
 - (void)turnScreen:(BOOL)portrait;
-- (int) distanceFromPoint:(int)p1 ToPoint:(int)p2;
+- (int) distanceFromPoint:(int)p2x toPoint:(int)p2y offset:(int)p1;
 
 
 @end

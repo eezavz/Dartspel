@@ -46,7 +46,7 @@
     }
 }
 
-- (int) distanceFromPoint:(int)p2x: (int)p2y: (int)p1
+- (int) distanceFromPoint:(int)p2x toPoint:(int)p2y offset:(int)p1
 {
     int xDist = (p2x - p1);
     int yDist = (p2y - p1);
@@ -55,15 +55,15 @@
 
 - (IBAction)gooi:(id)sender {
     int point;
-    int mg = random() % 20*moeilijkheidsgraad;
+    int mg = random() % 20 * moeilijkheidsgraad;
     NSString * pointsText;
     if(self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
-        point = 250 - [self distanceFromPoint:xSlider.value: ySlider.value: 125];
+        point = 250 - [self distanceFromPoint:xSlider.value toPoint:ySlider.value offset:125];
         point = point - mg;
         pointsText = [NSString stringWithFormat:@"Points: %i", point];
     }else{
-        point = 250 - [self distanceFromPoint:xSlider2.value: ySlider2.value: 93];
+        point = 250 - [self distanceFromPoint:xSlider2.value toPoint:ySlider2.value offset:93];
         point = point - mg;
         pointsText = [NSString stringWithFormat:@"Points: %i", point];
     }
